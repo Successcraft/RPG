@@ -1,6 +1,6 @@
 ///scr_move_state
 scr_get_input();
-pspd2 = sqrt(power(pspd, 2)/2);
+pspd2 = round(sqrt(power(pspd, 2)/2));
 if(right_key and up_key){
 phy_position_x += pspd2;
 phy_position_y -= pspd2;
