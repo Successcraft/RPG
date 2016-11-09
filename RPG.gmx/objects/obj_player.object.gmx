@@ -28,7 +28,7 @@
             <string>///Create the player
 // Set fixed rotation
 phy_fixed_rotation = true;
-spd = 3;
+pspd = 3;
 scr_get_input();
 state = 0;
 
