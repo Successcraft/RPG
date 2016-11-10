@@ -30,6 +30,11 @@
 phy_fixed_rotation = true;
 //defining basic vars
 pspd = 3;
+hspd = 0;
+vspd = 0;
+xaxis = 0;
+yaxis = 0;
+len = 0;
 pcurh = 4;
 pmaxh = 6;
 
