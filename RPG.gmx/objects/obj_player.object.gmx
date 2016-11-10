@@ -109,13 +109,18 @@ script_execute(state);
             <kind>1</kind>
             <string>///Draw GUI
 var i;
-for(i=pmaxh;i&gt;0;i--){
-if(i&gt;=pcurh){
+var h = false;
+for(i=pmaxh/2;i&gt;0;i -= 1){
+   if(i&gt;ceil(pcurh/2)){
         draw_sprite(spr_heartsheet, 2, 100*i+50, 50);
-   }/*else if(pcurh % 2 =! 0){
+   }else{
+        if(pcurh % 2 =! 0 and h == false){
         draw_sprite(spr_heartsheet, 1, 100*i+50, 50);
-   }*/else{
+        h = true;
+   }
+   else{
         draw_sprite(spr_heartsheet, 0, 100*i+50, 50);
+   }
    }
 }
 </string>
